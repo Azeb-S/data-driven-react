@@ -1,8 +1,8 @@
+import pin from "../assets/pin.png"
 
 export default function Entry(props) {
- console.log(props)
  return (
-  <article className="jornal-entry">
+  <article className="journal-entry">
    <div className="main-image-container">
     <img
      src={props.img.src}
@@ -11,24 +11,21 @@ export default function Entry(props) {
    </div>
 
    <div className="info-container">
-    <img className="marker"
-     src="./images/pin.png"
-     alt="marker icon" />
+    <img
+     className="marker"
+     src={pin}
+     alt="marker icon"
+    />
     <span className="country">{props.country}</span>
 
     <a href={props.googleMapsLink}>
-     View on Google Maps</a>
+     View on Google Maps
+    </a>
 
     <h2 className="entry-title">{props.title}</h2>
-
     <p className="trip-date">{props.dates}</p>
-
-    <p className="entry-text">
-     {props.text}
-    </p>
-
+    <p className="entry-text">{props.text}</p>
    </div>
-
   </article>
  )
 }
