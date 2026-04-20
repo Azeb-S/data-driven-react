@@ -1,4 +1,4 @@
-import pin from "/public/images/pin.png"
+import pin from "../assets/pin.png"
 
 export default function Entry(props) {
  return (
